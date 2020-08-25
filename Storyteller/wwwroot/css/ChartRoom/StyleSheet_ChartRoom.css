@@ -1,0 +1,473 @@
+﻿
+/*ChartHeader*/
+.chart-header {
+    box-sizing: border-box;
+    height: 44px;
+    background: linear-gradient(180deg, #64C6C7 0%, #70CDB8 100%), #70CDB8;
+}
+
+.chart-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.c-title-icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 10px;
+}
+
+.c-title-icon > i {
+    color: #FFFFFF;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*ChartBody*/
+.chart-body {
+    min-height: 667px;
+}
+
+.chart-body-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-body-input > hr {
+    width: 350px;
+    height: 2px;
+    border-top: 3px dotted #70CDB8;
+}
+
+.c-b-input-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    border: 3px solid #70CDB8;
+    box-sizing: border-box;
+    border-radius: 11px;
+    width: 520px;
+    padding: 20px;
+    position: relative;
+}
+
+.c-b-info-img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #70CDB8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.c-b-info-img > img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.c-b-info-text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.c-b-i-text-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.c-b-i-text-name > button {
+    background: #70CDB8;
+    border-radius: 14px;
+    border: none;
+    width: 110px;
+    height: 28px;
+}
+
+.c-b-i-text-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btnone-plus > i, .btntwo-report > i {
+    font-size: 30px;
+    color: #70CDB8;
+    border: 3px solid #70CDB8;
+    border-radius: 50%;
+    padding: 10px 8px;
+}
+
+.cb-i-t-btnone > h3, .cb-i-t-btntwo > h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.66667px;
+    color: #70CDB8;
+}
+
+.cb-i-t-btnone, .cb-i-t-btntwo {
+    cursor: pointer;
+}
+
+.c-b-input-people > h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.66667px;
+    color: #70CDB8;
+}
+
+.c-b-input-text {
+    width: inherit;
+    max-height: 500px;
+}
+
+.c-b-input-text::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.c-b-input-text::-webkit-scrollbar-thumb {
+    border: none;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .c-b-input-info {
+        width: 300px;
+    }
+
+    .c-b-info-text {
+        width: 160px;
+    }
+
+    .c-b-info-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .c-b-info-img > img {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .c-b-i-text-name > button {
+        width: 90px;
+        font-size: 12px;
+    }
+
+    .c-b-i-text-name > h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px){
+    .c-b-input-info {
+        width: 350px;
+    }
+
+    .c-b-info-text {
+        width: 200px;
+    }
+
+    .c-b-info-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .c-b-info-img > img {
+        max-width: 90px;
+        max-height: 90px;
+    }    
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px){
+    .c-b-input-info {
+        width: 390px;
+    }
+
+    .c-b-info-text {
+        width: 200px;
+    }
+}
+
+/*ChartFooter*/
+.chart-footer {
+    height: 56px;
+    background: linear-gradient(180deg, #64C6C7 0%, rgba(255, 255, 255, 0) 100%), #70CDB8;
+    box-sizing: border-box;
+}
+
+.chart-footer-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.c-f-input-img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5px;
+}
+
+.c-f-input-text > input {
+    width: 400px;
+    border-radius: 16.5px;
+    border: none;
+    height: 35px;
+    padding: 0 10px;
+}
+
+.c-f-input-send > i {
+    color: #FFFFFF;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+    .c-f-input-text > input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .c-f-input-text > input {
+        width: 250px;
+    }
+}
+
+
+
+/*對話框樣式*/
+.user-text-right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+    .user-text-right .beliked {
+        margin-top: auto;
+        padding: 0 0 10px 0;
+        background: var(--bgGary);
+        order: -1;
+        font-size: 15px;
+        color: #fff;
+    }
+
+        .user-text-right .beliked .belikedBg {
+            background: var(--mainColor);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: relative;
+            left: 10px;
+            box-sizing: border-box;
+        }
+
+    .user-text-right .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        right: 27%;
+        color: var(--bgGray);
+    }
+
+.user-text-left {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 20px;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+    .user-text-left .like {
+        margin-top: auto;
+        margin-right: auto;
+        padding: 0 0 10px 0;
+        font-size: 15px;
+        color: #fff;
+    }
+
+        .user-text-left .like .likeBg {
+            background: var(--bgGray);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: relative;
+            right: 10px;
+            box-sizing: border-box;
+        }
+
+    .user-text-left .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        left: 27%;
+        color: var(--bgGray);
+    }
+
+@media screen and (min-width: 374px) {
+    .user-text-right .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        right: 22%;
+        color: var(--bgGray);
+    }
+
+    .user-text-left .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        left: 22%;
+        color: var(--bgGray);
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .user-text-right .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        right: 18%;
+        color: var(--bgGray);
+    }
+
+    .user-text-left .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        left: 18%;
+        color: var(--bgGray);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .user-text-right .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        right: 14%;
+        color: var(--bgGray);
+    }
+
+    .user-text-left .rolesName {
+        position: absolute;
+        z-index: 2;
+        top: -30%;
+        left: 14%;
+        color: var(--bgGray);
+    }
+}
+
+.user-text-right p::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid var(--bgGray);
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+}
+
+.user-text-right p {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px 10px 0px 10px;
+    background-color: var(--bgGray);
+    position: relative;
+}
+
+.user-text-left p {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px 10px 10px 0;
+    background-color: var(--mainColor);
+    position: relative;
+}
+
+    .user-text-left p::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-bottom: 10px solid var(--mainColor);
+        position: absolute;
+        left: -10px;
+        bottom: 0px;
+    }
+
+
+
+.user-text-left .imguser {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.user-text-right .imguser {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.user-text-left .imguser::after {
+    content: '';
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.user-text-right .imguser::after {
+    content: '';
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+
+
+/*對話框樣式*/
